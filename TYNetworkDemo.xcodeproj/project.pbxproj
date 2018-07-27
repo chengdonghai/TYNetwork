@@ -1,0 +1,591 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1A74D03823C240303353E27E /* libPods-TYNetworkDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7295D6EAAEC85CE560DC6021 /* libPods-TYNetworkDemo.a */; };
+		1B941312210AABC600C54662 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B941311210AABC600C54662 /* AppDelegate.m */; };
+		1B941315210AABC600C54662 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B941314210AABC600C54662 /* ViewController.m */; };
+		1B941318210AABC600C54662 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B941316210AABC600C54662 /* Main.storyboard */; };
+		1B94131A210AABC800C54662 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B941319210AABC800C54662 /* Assets.xcassets */; };
+		1B94131D210AABC800C54662 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B94131B210AABC800C54662 /* LaunchScreen.storyboard */; };
+		1B941320210AABC800C54662 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B94131F210AABC800C54662 /* main.m */; };
+		1B94132A210AABC800C54662 /* TYNetworkDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B941329210AABC800C54662 /* TYNetworkDemoTests.m */; };
+		1B94134B210AABE600C54662 /* TYRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B941335210AABE500C54662 /* TYRequest.m */; };
+		1B94134C210AABE600C54662 /* TYXMLRequestSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B94133C210AABE500C54662 /* TYXMLRequestSerializer.m */; };
+		1B94134D210AABE600C54662 /* TYDownloadRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B94133E210AABE500C54662 /* TYDownloadRequest.m */; };
+		1B94134E210AABE600C54662 /* TYGZIPRequestSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B941340210AABE500C54662 /* TYGZIPRequestSerializer.m */; };
+		1B94134F210AABE600C54662 /* TYNetworkConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B941341210AABE500C54662 /* TYNetworkConfig.m */; };
+		1B941350210AABE600C54662 /* TYDownloadRequestHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B941342210AABE500C54662 /* TYDownloadRequestHandler.m */; };
+		1B941351210AABE600C54662 /* TYXMLResponseSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B941343210AABE500C54662 /* TYXMLResponseSerializer.m */; };
+		1B941352210AABE600C54662 /* TYRequestHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B941345210AABE500C54662 /* TYRequestHandler.m */; };
+		1B941353210AABE600C54662 /* TYError.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B941348210AABE500C54662 /* TYError.m */; };
+		1B941359210AB5D500C54662 /* NSString+ty_urlEncoding.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B941358210AB5D500C54662 /* NSString+ty_urlEncoding.m */; };
+		1B94135C210AB77100C54662 /* CustomRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B94135B210AB77100C54662 /* CustomRequest.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1B941326210AABC800C54662 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1B941305210AABC600C54662 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1B94130C210AABC600C54662;
+			remoteInfo = TYNetworkDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		079CDE86C1051730C0A9F92D /* Pods-TYNetworkDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TYNetworkDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TYNetworkDemo/Pods-TYNetworkDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		1B94130D210AABC600C54662 /* TYNetworkDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TYNetworkDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1B941310210AABC600C54662 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		1B941311210AABC600C54662 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		1B941313210AABC600C54662 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		1B941314210AABC600C54662 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		1B941317210AABC600C54662 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1B941319210AABC800C54662 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1B94131C210AABC800C54662 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1B94131E210AABC800C54662 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1B94131F210AABC800C54662 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1B941325210AABC800C54662 /* TYNetworkDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TYNetworkDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1B941329210AABC800C54662 /* TYNetworkDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TYNetworkDemoTests.m; sourceTree = "<group>"; };
+		1B94132B210AABC800C54662 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1B941335210AABE500C54662 /* TYRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYRequest.m; sourceTree = "<group>"; };
+		1B941336210AABE500C54662 /* TYRequestParameterConverterDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYRequestParameterConverterDelegate.h; sourceTree = "<group>"; };
+		1B941337210AABE500C54662 /* TYXMLResponseSerializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYXMLResponseSerializer.h; sourceTree = "<group>"; };
+		1B941338210AABE500C54662 /* TYDownloadRequestHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYDownloadRequestHandler.h; sourceTree = "<group>"; };
+		1B941339210AABE500C54662 /* TYRequestDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYRequestDefine.h; sourceTree = "<group>"; };
+		1B94133A210AABE500C54662 /* TYNetworkConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYNetworkConfig.h; sourceTree = "<group>"; };
+		1B94133B210AABE500C54662 /* TYError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYError.h; sourceTree = "<group>"; };
+		1B94133C210AABE500C54662 /* TYXMLRequestSerializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYXMLRequestSerializer.m; sourceTree = "<group>"; };
+		1B94133D210AABE500C54662 /* TYRequestHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYRequestHandler.h; sourceTree = "<group>"; };
+		1B94133E210AABE500C54662 /* TYDownloadRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYDownloadRequest.m; sourceTree = "<group>"; };
+		1B94133F210AABE500C54662 /* TYResponseDataConverterDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYResponseDataConverterDelegate.h; sourceTree = "<group>"; };
+		1B941340210AABE500C54662 /* TYGZIPRequestSerializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYGZIPRequestSerializer.m; sourceTree = "<group>"; };
+		1B941341210AABE500C54662 /* TYNetworkConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYNetworkConfig.m; sourceTree = "<group>"; };
+		1B941342210AABE500C54662 /* TYDownloadRequestHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYDownloadRequestHandler.m; sourceTree = "<group>"; };
+		1B941343210AABE500C54662 /* TYXMLResponseSerializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYXMLResponseSerializer.m; sourceTree = "<group>"; };
+		1B941344210AABE500C54662 /* TYRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYRequest.h; sourceTree = "<group>"; };
+		1B941345210AABE500C54662 /* TYRequestHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYRequestHandler.m; sourceTree = "<group>"; };
+		1B941346210AABE500C54662 /* TYXMLRequestSerializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYXMLRequestSerializer.h; sourceTree = "<group>"; };
+		1B941347210AABE500C54662 /* TYNetwork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYNetwork.h; sourceTree = "<group>"; };
+		1B941348210AABE500C54662 /* TYError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYError.m; sourceTree = "<group>"; };
+		1B941349210AABE500C54662 /* TYDownloadRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYDownloadRequest.h; sourceTree = "<group>"; };
+		1B94134A210AABE500C54662 /* TYGZIPRequestSerializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYGZIPRequestSerializer.h; sourceTree = "<group>"; };
+		1B941357210AB5D500C54662 /* NSString+ty_urlEncoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+ty_urlEncoding.h"; sourceTree = "<group>"; };
+		1B941358210AB5D500C54662 /* NSString+ty_urlEncoding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+ty_urlEncoding.m"; sourceTree = "<group>"; };
+		1B94135A210AB77100C54662 /* CustomRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomRequest.h; sourceTree = "<group>"; };
+		1B94135B210AB77100C54662 /* CustomRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomRequest.m; sourceTree = "<group>"; };
+		7295D6EAAEC85CE560DC6021 /* libPods-TYNetworkDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TYNetworkDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5FADD607EEC6186D8230F56 /* Pods-TYNetworkDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TYNetworkDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-TYNetworkDemo/Pods-TYNetworkDemo.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1B94130A210AABC600C54662 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A74D03823C240303353E27E /* libPods-TYNetworkDemo.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1B941322210AABC800C54662 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1B941304210AABC600C54662 = {
+			isa = PBXGroup;
+			children = (
+				1B94130F210AABC600C54662 /* TYNetworkDemo */,
+				1B941328210AABC800C54662 /* TYNetworkDemoTests */,
+				1B94130E210AABC600C54662 /* Products */,
+				E2ED13923C174BFEF5206372 /* Pods */,
+				711142B43D47F74D65135F45 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		1B94130E210AABC600C54662 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1B94130D210AABC600C54662 /* TYNetworkDemo.app */,
+				1B941325210AABC800C54662 /* TYNetworkDemoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1B94130F210AABC600C54662 /* TYNetworkDemo */ = {
+			isa = PBXGroup;
+			children = (
+				1B941334210AABE500C54662 /* TYNetwork */,
+				1B941310210AABC600C54662 /* AppDelegate.h */,
+				1B941311210AABC600C54662 /* AppDelegate.m */,
+				1B941313210AABC600C54662 /* ViewController.h */,
+				1B941314210AABC600C54662 /* ViewController.m */,
+				1B941316210AABC600C54662 /* Main.storyboard */,
+				1B941319210AABC800C54662 /* Assets.xcassets */,
+				1B94131B210AABC800C54662 /* LaunchScreen.storyboard */,
+				1B94131E210AABC800C54662 /* Info.plist */,
+				1B94131F210AABC800C54662 /* main.m */,
+				1B94135A210AB77100C54662 /* CustomRequest.h */,
+				1B94135B210AB77100C54662 /* CustomRequest.m */,
+			);
+			path = TYNetworkDemo;
+			sourceTree = "<group>";
+		};
+		1B941328210AABC800C54662 /* TYNetworkDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				1B941329210AABC800C54662 /* TYNetworkDemoTests.m */,
+				1B94132B210AABC800C54662 /* Info.plist */,
+			);
+			path = TYNetworkDemoTests;
+			sourceTree = "<group>";
+		};
+		1B941334210AABE500C54662 /* TYNetwork */ = {
+			isa = PBXGroup;
+			children = (
+				1B941357210AB5D500C54662 /* NSString+ty_urlEncoding.h */,
+				1B941358210AB5D500C54662 /* NSString+ty_urlEncoding.m */,
+				1B941336210AABE500C54662 /* TYRequestParameterConverterDelegate.h */,
+				1B941339210AABE500C54662 /* TYRequestDefine.h */,
+				1B94133A210AABE500C54662 /* TYNetworkConfig.h */,
+				1B94133D210AABE500C54662 /* TYRequestHandler.h */,
+				1B941345210AABE500C54662 /* TYRequestHandler.m */,
+				1B941349210AABE500C54662 /* TYDownloadRequest.h */,
+				1B94133E210AABE500C54662 /* TYDownloadRequest.m */,
+				1B94133F210AABE500C54662 /* TYResponseDataConverterDelegate.h */,
+				1B941340210AABE500C54662 /* TYGZIPRequestSerializer.m */,
+				1B94134A210AABE500C54662 /* TYGZIPRequestSerializer.h */,
+				1B941341210AABE500C54662 /* TYNetworkConfig.m */,
+				1B941338210AABE500C54662 /* TYDownloadRequestHandler.h */,
+				1B941342210AABE500C54662 /* TYDownloadRequestHandler.m */,
+				1B941346210AABE500C54662 /* TYXMLRequestSerializer.h */,
+				1B94133C210AABE500C54662 /* TYXMLRequestSerializer.m */,
+				1B941337210AABE500C54662 /* TYXMLResponseSerializer.h */,
+				1B941343210AABE500C54662 /* TYXMLResponseSerializer.m */,
+				1B941344210AABE500C54662 /* TYRequest.h */,
+				1B941335210AABE500C54662 /* TYRequest.m */,
+				1B941347210AABE500C54662 /* TYNetwork.h */,
+				1B94133B210AABE500C54662 /* TYError.h */,
+				1B941348210AABE500C54662 /* TYError.m */,
+			);
+			path = TYNetwork;
+			sourceTree = "<group>";
+		};
+		711142B43D47F74D65135F45 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7295D6EAAEC85CE560DC6021 /* libPods-TYNetworkDemo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E2ED13923C174BFEF5206372 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				079CDE86C1051730C0A9F92D /* Pods-TYNetworkDemo.debug.xcconfig */,
+				A5FADD607EEC6186D8230F56 /* Pods-TYNetworkDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1B94130C210AABC600C54662 /* TYNetworkDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1B94132E210AABC800C54662 /* Build configuration list for PBXNativeTarget "TYNetworkDemo" */;
+			buildPhases = (
+				F26B18589E86CE08AA7803B0 /* [CP] Check Pods Manifest.lock */,
+				1B941309210AABC600C54662 /* Sources */,
+				1B94130A210AABC600C54662 /* Frameworks */,
+				1B94130B210AABC600C54662 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TYNetworkDemo;
+			productName = TYNetworkDemo;
+			productReference = 1B94130D210AABC600C54662 /* TYNetworkDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1B941324210AABC800C54662 /* TYNetworkDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1B941331210AABC800C54662 /* Build configuration list for PBXNativeTarget "TYNetworkDemoTests" */;
+			buildPhases = (
+				1B941321210AABC800C54662 /* Sources */,
+				1B941322210AABC800C54662 /* Frameworks */,
+				1B941323210AABC800C54662 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1B941327210AABC800C54662 /* PBXTargetDependency */,
+			);
+			name = TYNetworkDemoTests;
+			productName = TYNetworkDemoTests;
+			productReference = 1B941325210AABC800C54662 /* TYNetworkDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1B941305210AABC600C54662 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = Dahai;
+				TargetAttributes = {
+					1B94130C210AABC600C54662 = {
+						CreatedOnToolsVersion = 9.3;
+					};
+					1B941324210AABC800C54662 = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = 1B94130C210AABC600C54662;
+					};
+				};
+			};
+			buildConfigurationList = 1B941308210AABC600C54662 /* Build configuration list for PBXProject "TYNetworkDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1B941304210AABC600C54662;
+			productRefGroup = 1B94130E210AABC600C54662 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1B94130C210AABC600C54662 /* TYNetworkDemo */,
+				1B941324210AABC800C54662 /* TYNetworkDemoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1B94130B210AABC600C54662 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1B94131D210AABC800C54662 /* LaunchScreen.storyboard in Resources */,
+				1B94131A210AABC800C54662 /* Assets.xcassets in Resources */,
+				1B941318210AABC600C54662 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1B941323210AABC800C54662 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		F26B18589E86CE08AA7803B0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TYNetworkDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1B941309210AABC600C54662 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1B94134E210AABE600C54662 /* TYGZIPRequestSerializer.m in Sources */,
+				1B941352210AABE600C54662 /* TYRequestHandler.m in Sources */,
+				1B941350210AABE600C54662 /* TYDownloadRequestHandler.m in Sources */,
+				1B94134F210AABE600C54662 /* TYNetworkConfig.m in Sources */,
+				1B94134B210AABE600C54662 /* TYRequest.m in Sources */,
+				1B941315210AABC600C54662 /* ViewController.m in Sources */,
+				1B94135C210AB77100C54662 /* CustomRequest.m in Sources */,
+				1B941351210AABE600C54662 /* TYXMLResponseSerializer.m in Sources */,
+				1B941353210AABE600C54662 /* TYError.m in Sources */,
+				1B94134D210AABE600C54662 /* TYDownloadRequest.m in Sources */,
+				1B941320210AABC800C54662 /* main.m in Sources */,
+				1B941359210AB5D500C54662 /* NSString+ty_urlEncoding.m in Sources */,
+				1B94134C210AABE600C54662 /* TYXMLRequestSerializer.m in Sources */,
+				1B941312210AABC600C54662 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1B941321210AABC800C54662 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1B94132A210AABC800C54662 /* TYNetworkDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1B941327210AABC800C54662 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1B94130C210AABC600C54662 /* TYNetworkDemo */;
+			targetProxy = 1B941326210AABC800C54662 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1B941316210AABC600C54662 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1B941317210AABC600C54662 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1B94131B210AABC800C54662 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1B94131C210AABC800C54662 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1B94132C210AABC800C54662 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		1B94132D210AABC800C54662 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1B94132F210AABC800C54662 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 079CDE86C1051730C0A9F92D /* Pods-TYNetworkDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TYNetworkDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wxcty.TYNetworkDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1B941330210AABC800C54662 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A5FADD607EEC6186D8230F56 /* Pods-TYNetworkDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TYNetworkDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wxcty.TYNetworkDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		1B941332210AABC800C54662 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TYNetworkDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wxcty.TYNetworkDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TYNetworkDemo.app/TYNetworkDemo";
+			};
+			name = Debug;
+		};
+		1B941333210AABC800C54662 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TYNetworkDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wxcty.TYNetworkDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TYNetworkDemo.app/TYNetworkDemo";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1B941308210AABC600C54662 /* Build configuration list for PBXProject "TYNetworkDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1B94132C210AABC800C54662 /* Debug */,
+				1B94132D210AABC800C54662 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1B94132E210AABC800C54662 /* Build configuration list for PBXNativeTarget "TYNetworkDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1B94132F210AABC800C54662 /* Debug */,
+				1B941330210AABC800C54662 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1B941331210AABC800C54662 /* Build configuration list for PBXNativeTarget "TYNetworkDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1B941332210AABC800C54662 /* Debug */,
+				1B941333210AABC800C54662 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1B941305210AABC600C54662 /* Project object */;
+}
